@@ -34,13 +34,6 @@ def main():
     print("Thank you")
 
 
-def get_user_choice(menu=MENU):
-    """Prompt the user to choose an option from a menu and return their choice."""
-    print(menu)
-    choice = input(">>> ").upper()
-    return choice
-
-
 def print_stars(number_of_stars: int):
     """Print a string of asterisks of the given length."""
     print("*" * number_of_stars)
