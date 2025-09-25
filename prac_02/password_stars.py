@@ -11,7 +11,6 @@ def print_asterisks(password: str):
     """Print a string of asterisks equal in length to password."""
     print("*" * len(password))
 
-
 def get_password(minimum_length=10) -> str:
     """Return a password from the user that meets a given minimum length.
 
