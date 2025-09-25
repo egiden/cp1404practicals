@@ -28,4 +28,5 @@ def determine_score_status(score: float) -> str:
         return "Bad"
 
 
-main()
+if __name__ == "__main__":
+    main()
