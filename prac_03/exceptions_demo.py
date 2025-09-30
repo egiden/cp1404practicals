@@ -16,3 +16,12 @@ except ValueError:
 except ZeroDivisionError:
     print("Cannot divide by zero!")
 print("Finished.")
+
+# Answer to question 1
+# A ValueError will occur when an invalid or incorrect value is used in a particular opertation
+
+# Answer to question 2
+# A ZeroDivisionError will occur when an attempt is made to divide an number by zero.
+
+# Answer to question 3
+# Yes, the code can be altered to avoid a ZeroDivisionError.
