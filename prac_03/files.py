@@ -15,3 +15,10 @@ in_file = open("name.txt", 'r')
 # and all escape characters
 name = in_file.readline().strip()
 print(f"Hi {name}!")
+
+# Question 3
+with open("numbers.txt", 'r') as in_file:
+    lines = in_file.readlines()
+    first_number = int(lines[0])
+    second_number = int(lines[1])
+    print(f"Result: {first_number + second_number}")
