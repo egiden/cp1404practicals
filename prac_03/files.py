@@ -22,3 +22,10 @@ with open("numbers.txt", 'r') as in_file:
     first_number = int(lines[0])
     second_number = int(lines[1])
     print(f"Result: {first_number + second_number}")
+
+# Question 4
+with open("numbers.txt", 'r') as in_file:
+    sum_of_numbers = 0
+    for line in in_file:
+        sum_of_numbers += int(line)
+    print(f"Result: {sum_of_numbers}")
