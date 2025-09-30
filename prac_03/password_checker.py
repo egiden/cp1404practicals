@@ -31,10 +31,12 @@ def is_valid_password(password):
     if not (MIN_LENGTH <= len(password) <= MAX_LENGTH):
         return False
 
-    number_of_lower = 0
-    number_of_upper = 0
-    number_of_digit = 0
-    number_of_special = 0
+    # Initiate variables for counting character types
+    # in password
+    number_of_lower = 0  # Number of lowercase characters
+    number_of_upper = 0  # Number of uppercase characters
+    number_of_digit = 0  # Number of numerical characters
+    number_of_special = 0  # Number of special characters
     # Count each kind of character
     for character in password:
         if character.isdigit():
