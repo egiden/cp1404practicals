@@ -8,3 +8,10 @@ name = input("Enter name: ")
 out_file = open("name.txt", 'w')
 print(name, file=out_file)
 out_file.close()
+
+# Question 2
+in_file = open("name.txt", 'r')
+# Read name and strip all leading and trailing whitespace
+# and all escape characters
+name = in_file.readline().strip()
+print(f"Hi {name}!")
