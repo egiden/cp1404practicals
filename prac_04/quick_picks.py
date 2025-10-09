@@ -13,15 +13,15 @@ MAX_NUMBER = 45
 def main():
     number_of_quick_picks = int(input("How many quick picks? "))
     for i in range(number_of_quick_picks):
-        numbers = produce_unique_integers(NUMBERS_PER_LINE, MIN_NUMBER, MAX_NUMBER)
+        numbers = generate_unique_integers(NUMBERS_PER_LINE, MIN_NUMBER, MAX_NUMBER)
         numbers.sort()  # sort the numbers in ascending order
         # convert the numbers to strings and pad them with whitespace on the left to fill a length of 2
         padded_numbers = [f"{number:2}" for number in numbers]
         print(" ".join(padded_numbers))  # join the padded numbers with a space in between and print the result
 
 
-def produce_unique_integers(number_of_integers: int, lower_bound: int, upper_bound: int):
-    """Produce a list of unique, random integers between given bounds (inclusive)."""
+def generate_unique_integers(number_of_integers: int, lower_bound: int, upper_bound: int):
+    """Create a list of unique, random integers between given bounds (inclusive)."""
     integers = []
     while len(integers) != number_of_integers:
         integer = random.randint(lower_bound, upper_bound)
