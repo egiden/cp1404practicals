@@ -38,9 +38,9 @@ numbers = [int(almost_number) for almost_number in almost_numbers]
 
 # list comprehension to create a list of only the numbers that are
 # greater than 9 from the numbers list
-new_numbers = [number for number in numbers if number > 9]
+numbers_over_nine = [number for number in numbers if number > 9]
 
 # (more advanced) use a list comprehension and the join string method
 # to create a string (not list) of the last names for those full names longer than 11 characters
 # the result should be: 'Harlem, Hendrix, Lovelace'
-new_names = ', '.join([full_name.split()[1] for full_name in full_names if len(full_name) > 11])
+long_last_names = ', '.join([full_name.split()[1] for full_name in full_names if len(full_name) > 11])
