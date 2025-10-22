@@ -2,7 +2,6 @@
 Emails
 Estimate: 30 minutes
 Actual:   ~29 minutes
-egide@outlook.com
 """
 
 
