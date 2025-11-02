@@ -24,7 +24,7 @@ def main():
 def display_guitars(guitars: list[Guitar]):
     """Print a formatted list of the details of guitars from a list of Guitar instances."""
     max_name_length = max([len(guitar.name) for guitar in guitars])  # Calculate length of longest guitar name
-    # Create a list of cost values where each is formatted with a comma separator and two decimal places
+    # Create a list of guitar costs where each is formatted with a comma separator and two decimal places
     # e.g. 3456.7 -> "3,456.70"
     formatted_costs = [f"{guitar.cost:1,.2f}" for guitar in guitars]
     # Calculate length of the longest element of formatted_costs
