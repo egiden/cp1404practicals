@@ -18,6 +18,10 @@ def main():
 
     # Display all the guitars
     print()
+    display_guitars(guitars)
+
+
+def display_guitars(guitars: list[Guitar]):
     print("These are my guitars:")
     max_name_length = max([len(guitar.name) for guitar in guitars])
     # Create a list of cost values where each is formatted with a comma separator and two decimal places
